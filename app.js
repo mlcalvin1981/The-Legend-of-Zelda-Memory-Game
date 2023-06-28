@@ -2,52 +2,52 @@ document.addEventListener('DOMContentLoaded', () => {
     //card options
     const cardArray = [
       {
-        name: 'bomb',
-        img: 'images/bomb.png'
-      },
-      {
-        name: 'key',
-        img: 'images/key.png'
-      },
-      {
-        name: 'heart',
-        img: 'images/heart.png'
-      },
-      {
-        name: 'rupee',
-        img: 'images/rupee.png'
-      },
-      {
-        name: 'compass',
-        img: 'images/compass.png'
-      },
-      {
         name: 'arrow',
         img: 'images/arrow.png'
+      },
+      {
+        name: 'bait',
+        img: 'images/bait.png'
       },
       {
         name: 'bomb',
         img: 'images/bomb.png'
       },
       {
-        name: 'key',
-        img: 'images/key.png'
+        name: 'candle',
+        img: 'images/candle.png'
       },
       {
         name: 'heart',
         img: 'images/heart.png'
       },
       {
-        name: 'rupee',
-        img: 'images/rupee.png'
-      },
-      {
-        name: 'compass',
-        img: 'images/compass.png'
+        name: 'wand',
+        img: 'images/wand.png'
       },
       {
         name: 'arrow',
         img: 'images/arrow.png'
+      },
+      {
+        name: 'bait',
+        img: 'images/bait.png'
+      },
+      {
+        name: 'bomb',
+        img: 'images/bomb.png'
+      },
+      {
+        name: 'candle',
+        img: 'images/candle.png'
+      },
+      {
+        name: 'heart',
+        img: 'images/heart.png'
+      },
+      {
+        name: 'wand',
+        img: 'images/wand.png'
       }
     ]
   
@@ -82,8 +82,8 @@ document.addEventListener('DOMContentLoaded', () => {
         
       }
       else if (cardsChosen[0] === cardsChosen[1]) {
-        cards[optionOneId].setAttribute('src', 'images/white.png')
-        cards[optionTwoId].setAttribute('src', 'images/white.png')
+        cards[optionOneId].setAttribute('src', 'images/black.png')
+        cards[optionTwoId].setAttribute('src', 'images/black.png')
         cards[optionOneId].removeEventListener('click', flipCard)
         cards[optionTwoId].removeEventListener('click', flipCard)
         cardsWon.push(cardsChosen)
@@ -94,9 +94,9 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       cardsChosen = []
       cardsChosenId = []
-      resultDisplay.textContent = cardsWon.length
+      
       if  (cardsWon.length === cardArray.length/2) {
-        resultDisplay.textContent = " YOU'RE THE HERO OF HYRULE."
+        alert("THANKS LINK, YOU'RE THE HERO OF HYRULE.");
       }
     }
   

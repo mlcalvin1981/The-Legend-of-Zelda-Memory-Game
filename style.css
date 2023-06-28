@@ -1,7 +1,18 @@
+
+body {
+  background-color: black;
+  }
+
 .grid {
-    display: flex;
+    
+    margin: auto;
+    border-style: solid;
+    border-color: gold;
+    display: flex;  
     flex-wrap: wrap;
     width: 400px;
     height: 300px;
   }
+
+  
   
