@@ -2,10 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
     //card options
     const cardArray = [
       {
-        name: 'arrow',
-        img: 'images/arrow.png'
-      },
-      {
         name: 'bait',
         img: 'images/bait.png'
       },
@@ -20,16 +16,16 @@ document.addEventListener('DOMContentLoaded', () => {
       {
         name: 'heart',
         img: 'images/heart.png'
+      },
+      {
+        name: 'ring',
+        img: 'images/ring.png'
       },
       {
         name: 'wand',
         img: 'images/wand.png'
       },
       {
-        name: 'arrow',
-        img: 'images/arrow.png'
-      },
-      {
         name: 'bait',
         img: 'images/bait.png'
       },
@@ -44,6 +40,10 @@ document.addEventListener('DOMContentLoaded', () => {
       {
         name: 'heart',
         img: 'images/heart.png'
+      },
+      {
+        name: 'ring',
+        img: 'images/ring.png'
       },
       {
         name: 'wand',
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
       cardsChosenId = []
       
       if  (cardsWon.length === cardArray.length/2) {
-        alert("THANKS LINK, YOU'RE THE HERO OF HYRULE.");
+        alert("YOU'RE THE HERO OF HYRULE.");
       }
     }
   

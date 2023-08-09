@@ -3,15 +3,14 @@ body {
   background-color: black;
   }
 
-.grid {
-    
-    margin: auto;
+.grid {       
     border-style: solid;
     border-color: gold;
     display: flex;  
     flex-wrap: wrap;
     width: 400px;
     height: 300px;
+    margin: auto;
   }
 
   
